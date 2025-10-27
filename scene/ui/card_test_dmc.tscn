@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://dluwddwncxw7r"]
+
+[ext_resource type="Script" uid="uid://css55aui51xy3" path="res://lib/g_flashcards/scene/ui/card_test_dmc.gd" id="1_1ypk4"]
+
+[node name="card_test_dmc" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1ypk4")
+metadata/_custom_type_script = "uid://b5xt50835k5oh"
+
+[node name="back_color" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="vbox" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="hbox_title" type="HBoxContainer" parent="vbox"]
+layout_mode = 2
+
+[node name="hbox_body" type="HBoxContainer" parent="vbox"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="card_arc" type="AspectRatioContainer" parent="vbox/hbox_body"]
+layout_mode = 2
+size_flags_horizontal = 3
